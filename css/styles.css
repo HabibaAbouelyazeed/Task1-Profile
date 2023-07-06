@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --purple: #8390ff;
+    --blue: #62bcfc;
+    --paleBlue: #e2e5ff;
+    --gray: #f9f9ff;
+    --dark: #04091e;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.active{
+    color: var(--purple);
+}
+
+/* Nav==> START */
+nav{
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    margin: 0 1rem;
+}
+
+nav ul li:hover{
+    cursor: pointer;
+    color: var(--purple);
+}
+/* Nav==> END */
+
+/* Main==> START */
+main section{
+    padding: 4rem 0;
+}
+
+.main-title{
+    margin: 0 33%;
+    margin-bottom: 4rem;
+}
+.main-title h2{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.main-title p{
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Banner==> START */
+.banner{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--purple), var( --blue));
+}
+
+.banner .title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.banner .info{
+    display: flex;
+    align-items: center;
+}
+
+.banner .info p{
+    padding: 0 0.75rem;
+}
+/* Banner==> END */
+
+/* Offered Services==> START */
+.offered-services{
+    text-align: center;
+}
+
+.offered-services .container{
+    display: flex;
+    margin: 0 10%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.offered-services .container .item{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    margin-bottom: 3rem;
+}
+
+.offered-services .container .item svg{
+    margin-bottom: 2rem;
+}
+.offered-services .container .item p{
+    margin-top: 1rem;
+    padding: 0 4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* Offered Services==> END */
+
+/* Numbers Section==> START */
+.numbers-section{
+    text-align: center;
+    background-image: linear-gradient(to right, var(--purple), var( --blue));
+}
+
+.numbers-section .container{
+    display: flex;
+    margin: 0 25%;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+}
+
+.numbers-section h2{
+    font-weight: bold;
+}
+.numbers-section p{
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+/* Offered Services==> END */
+
+/* Main==> END */
